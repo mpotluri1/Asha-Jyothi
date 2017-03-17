@@ -3,7 +3,7 @@ variable ami_id {
 }
 
 variable key_name {
-  default = "arun_rean_trainee"
+  default = "aj-development"
 }
 
 variable security_group {
