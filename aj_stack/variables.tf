@@ -11,7 +11,7 @@ variable security_group {
 }
 
 variable instance_type {
-  default = "t2.xlarge"
+  default = "t2.medium"
 }
 
 variable az {
