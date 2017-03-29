@@ -2,7 +2,6 @@
 ( set -x
 sudo apt-get -y update &&
 sudo add-apt-repository -y ppa:ondrej/php &&
-sudo apt-get -y update &&
 sudo apt-get install -y php5.6 &&
 sudo apt-get install -y apache2 &&
 sudo apt-get install -y libapache2-mod-php5.6 &&
@@ -21,4 +20,5 @@ rm -rf html
 sudo unzip asha-jyothi.zip &&
 sudo chmod -R 775 /var/www/html/ &&
 sudo service apache2 restart
+
 ) 2>&1 | tee /tmp/aj-bootstrap.log
