@@ -23,7 +23,9 @@ resource "aws_instance" "aj_stack" {
   iam_instance_profile = "${var.iamprofile}"
   tags {
     Owner = "${var.owner}"
-    Name = "${var.name}"
+    Name = "AJ-Dev"
+    ExpirationDate = "2017-04-20"
+    Environment = "Development"
   }
   }
 
