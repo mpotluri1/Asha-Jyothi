@@ -1,4 +1,11 @@
 #EC2 Instance
+terraform {
+  backend "s3" {
+    bucket = "arun-cloudfront-logs"
+    key = "testing-terraform"
+    region = "us-east-1"
+  }
+}
 data "terraform_remote_state" "aj_vpc" {
   backend = "s3"
   config {
