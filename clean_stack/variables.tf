@@ -45,3 +45,7 @@ variable expiration_date {
 variable "iamprofile" {
   default = "s3accesstoec2"
 }
+
+variable "state_file" {
+  default = "testing-terraform"
+}

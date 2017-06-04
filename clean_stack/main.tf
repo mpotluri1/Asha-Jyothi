@@ -29,11 +29,13 @@ resource "aws_instance" "aj_stack" {
   user_data = "${data.template_file.aj_boot.rendered}"
   subnet_id = "${data.terraform_remote_state.aj_vpc.public_subnets[0]}"
   iam_instance_profile = "${var.iamprofile}"
+  associate_public_ip_address = "true"
   tags {
     Owner = "${var.owner}"
     Name = "AJ-Dev"
-    ExpirationDate = "2017-04-20"
+    ExpirationDate = "2017-06-20"
     Environment = "Development"
+    Project = "Asha-Jyothi"
   }
   }
 
