@@ -41,5 +41,8 @@ resource "aws_instance" "aj_stack" {
 
 data "template_file" "aj_boot" {
   template = "${file("user_data/aj_bootstrap.sh.tpl")}"
+   vars {
+     database-endpoint="${var.database-endpoint}"
+   }
 }
 
