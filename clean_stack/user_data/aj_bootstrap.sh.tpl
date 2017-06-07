@@ -32,7 +32,7 @@ rm -rf /var/www/html &&
 mv /var/www/aj_site /var/www/html &&
 rm -f /var/www/html/wp-config.php &&
 aws s3 cp s3://manvi-logs/wp-config.php /var/www/html/ &&
-sudo sed -i 's/<testing>/${database-endpoint}/g' /var/www/html/wp-config.php
+sudo sed -i 's/<database-checkpoint>/${database-endpoint}/g' /var/www/html/wp-config.php
 
 #final configuration
 rm -rf /etc/httpd/conf/httpd.conf &&
