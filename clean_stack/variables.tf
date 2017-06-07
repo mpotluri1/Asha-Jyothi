@@ -19,7 +19,7 @@ variable az {
 }
 
 variable owner {
-  default = "arun.sanna"
+  default = "manvitha.potluri"
 }
 
 variable name {

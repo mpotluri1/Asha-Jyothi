@@ -11,7 +11,7 @@ data "terraform_remote_state" "aj_vpc" {
 terraform {
   backend "s3" {
     bucket = "arun-cloudfront-logs"
-    key = "testing-terraform"
+    key = "testing-terraform-ajtest"
     region = "us-east-1"
   }
 }
