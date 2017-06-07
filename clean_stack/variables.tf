@@ -49,3 +49,7 @@ variable "iamprofile" {
 variable "state_file" {
   default = "testing-terraform"
 }
+variable "database-endpoint" {
+  default = "testing"
+}
+
