@@ -30,8 +30,9 @@ cd /var/www/ &&
 git clone git@github.com:arunsanna/aj_site.git &&
 rm -rf /var/www/html &&
 mv /var/www/aj_site /var/www/html &&
-rm -f /var/www/html/wp-config.php
-aws s3 cp s3://arun-cloudfront-logs/aj-keys/wp-config.php /var/www/html/ &&
+rm -f /var/www/html/wp-config.php &&
+aws s3 cp s3://manvi-logs/wp-config.php /var/www/html/ &&
+#aws s3 cp s3://arun-cloudfront-logs/aj-keys/wp-config.php /var/www/html/ &&
 
 #final configuration
 rm -rf /etc/httpd/conf/httpd.conf &&
