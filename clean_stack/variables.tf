@@ -3,7 +3,7 @@ variable ami_id {
 }
 
 variable key_name {
-  default = "aj-development"
+  default = "manvi_trainee"
 }
 
 variable security_group {
@@ -23,7 +23,7 @@ variable owner {
 }
 
 variable name {
-  default = "AJ-Development"
+  default = "AJ-Dev"
 }
 
 variable remote_state_bucket {

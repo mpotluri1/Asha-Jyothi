@@ -32,7 +32,7 @@ resource "aws_instance" "aj_stack" {
   associate_public_ip_address = "true"
   tags {
     Owner = "${var.owner}"
-    Name = "AJ-Dev"
+    Name = "${var.name}"
     ExpirationDate = "2017-06-20"
     Environment = "Development"
     Project = "Asha-Jyothi"
