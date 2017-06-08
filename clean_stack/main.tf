@@ -43,6 +43,7 @@ data "template_file" "aj_boot" {
   template = "${file("user_data/aj_bootstrap.sh.tpl")}"
    vars {
      database-endpoint="${var.database-endpoint}"
+     name="{var.name}"
    }
 }
 
