@@ -39,7 +39,7 @@ variable remote_buc_reg {
 }
 
 variable expiration_date {
-  default = "2017-01-30"
+  default = "2017-06-30"
 }
 
 variable "iamprofile" {

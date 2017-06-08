@@ -33,7 +33,7 @@ resource "aws_instance" "aj_stack" {
   tags {
     Owner = "${var.owner}"
     Name = "${var.name}"
-    ExpirationDate = "2017-06-20"
+    ExpirationDate = "${var.expiration_date}"
     Environment = "Development"
     Project = "Asha-Jyothi"
   }
@@ -43,7 +43,8 @@ data "template_file" "aj_boot" {
   template = "${file("user_data/aj_bootstrap.sh.tpl")}"
    vars {
      database-endpoint="${var.database-endpoint}"
-     name="{var.name}"
+    # name="${var.name}"
+     expiration_date="${var.expiration_date}"
    }
 }
 
