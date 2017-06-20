@@ -8,13 +8,13 @@ data "terraform_remote_state" "aj_vpc" {
   }
 }
 
-#terraform {
-#  backend "s3" {
+terraform {
+  backend "s3" {
 #    bucket = "arun-cloudfront-logs"
 #    key = "testing-terraform-ajtest"
 #    region = "us-east-1"
-#  }
-#}
+  }
+}
 
 provider "aws" {
   region = "us-east-1"
